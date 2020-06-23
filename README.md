@@ -13,8 +13,10 @@ The aim of the project was to learn about the GIF file format, LZW encoding and 
 ## Usage
 
 `GifReader` is initialised with an `std::ifstream` object.
-The header, LSD and global color table must first be parsed using `GifReader::parse()`
-Calling `GifReader::getFrame()` when `GifReader::frameAvailable()` is false results in undefined behaviour
+
+The header, LSD and global color table must first be parsed using `GifReader::parse()`.
+
+Calling `GifReader::getFrame()` when `GifReader::frameAvailable()` is false results in undefined behaviour.
 
 ```cpp
 #include <fstream>
